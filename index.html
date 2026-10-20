@@ -13,9 +13,16 @@
     span{
         color: #A5D66A;
     }
+    .section2{
+        
+    background-color: rgb(245 243 237 / var(--tw-bg-opacity, 1));
+    .box{
+        background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1))
+    }
+    }
 </style>
 <body>
-    <nav class="h-[10vh] flex justify-around item-center fixed z-9999 w-[100%] bg-black text-white md:h-[15vh] p-4" >
+    <nav class=" h-[10vh] flex  justify-around item-center fixed z-9999 w-[100%] bg-black text-white md:h-[15vh] p-4" >
         <div class="w-[50%] md:w-[15%] flex justify-evenly item-center">
         <i class="ri-t-box-fill text-6xl text-[#A5D66A]"></i>
         <div>
@@ -35,7 +42,7 @@
 
     </nav>
     <section class="h-[100vh]">
-        <div class="bg-[url(./images/cricket.jpg)] bg-center relative bg-cover h-[100%]">
+        <div class="bg-[url(./images/cricket.jpg)] bg-fixed bg-center relative bg-cover h-[100%]">
             <div class="h-[100%] w-[100%] bg-black/50 text-white">
                 <div class="md:w-[55%] text-center md:text-start absolute top-40  md:left-10 ">
                     <h1 class="text-7xl font-bold">Play. Connect. <span>Belong.</span></h1>
@@ -51,7 +58,70 @@
 
     </section>
     <!-- section 2 -->
-    <section class="h-[100vh] bg-slate-700">
+    <section class=" section2 h-[135vh] md:h-[100vh]">
+        <div class="md:flex-row h-[35vh] flex md:justify-between items-center w-full flex-col justify-evenly">
+            <div class="w-[65%] ml-0 text-center md:text-start md:w-[45%] md:ml-7">
+                 <h1 class="text-[#A5D66A] font-bold mt-3">Most Played</h1>
+                 <h2 class="text-6xl font-bold">Popular Sports in Dubai</h2>
+            </div>
+            <div class="md:w-[40%] w-[90%] md:text-start text-center">
+                <p class="mt-0 md:mt-20 text-xl text-[#8E9991] mr-7">From indoor courts to beachside runs. Find your sport and start playing across the city.</p>
+            </div>
+        </div>
+
+        <div class="flex justify-evenly items-center h-[55vh] flex-col md:flex-row gap-4 ">
+            
+            <div class="box h-[150px]  w-[160px] rounded-xl shadow-xl  shadow-gray-400  flex justify-normal items-center flex-col">
+                <div class="bg-black h-[52px] w-[55px] items-center justify-center flex rounded-xl mt-5">
+                <i class="ri-football-fill text-[#A5D66A] text-2xl"></i>
+                </div>
+                 <h1 class="font-bold mt-3">FOOTBALL</h1>
+                 <p class="text-[#8E9991] mt-1">95+ pitches</p>
+           </div>
+            <div class="box h-[150px] w-[160px] rounded-xl shadow-xl  shadow-gray-400 flex justify-normal items-center flex-col">
+                 <div class="bg-black h-[52px] w-[55px] items-center justify-center flex rounded-xl mt-5">
+                <i class="ri-run-fill text-[#A5D66A] text-2xl"></i>
+                </div>
+                 <h1 class="font-bold mt-3">RUNNING</h1>
+                 <p class="text-[#8E9991] mt-1">18+ clubs</p>
+
+            </div>
+            <div class="box h-[150px] w-[160px] rounded-xl shadow-xl  shadow-gray-400 flex justify-normal items-center flex-col">
+                  <div class="bg-black h-[52px] w-[55px] items-center justify-center flex rounded-xl mt-5">
+                <i class="ri-leaf-fill text-[#A5D66A] text-2xl"></i>
+                </div>
+                 <h1 class="font-bold mt-3">BADMINTON</h1>
+                 <p class="text-[#8E9991] mt-1">13+ courts</p>
+
+            </div>
+            <div class="box h-[150px] w-[160px] rounded-xl shadow-xl  shadow-gray-400 flex justify-normal items-center flex-col">
+                  <div class="bg-black h-[52px] w-[55px] items-center justify-center flex rounded-xl mt-5">
+             <i class="ri-baseball-fill text-[#A5D66A] text-2xl"></i>
+                </div>
+                 <h1 class="font-bold mt-3">BASEBALL</h1>
+                 <p class="text-[#8E9991] mt-1">35+ courts</p>
+
+            </div>
+            <div class="box h-[150px] w-[160px] rounded-xl shadow-xl  shadow-gray-400 flex justify-normal items-center flex-col">
+                  <div class="bg-black h-[52px] w-[55px] items-center justify-center flex rounded-xl mt-5">
+                <i class="ri-basketball-fill text-[#A5D66A] text-2xl"></i>
+                </div>
+                 <h1 class="font-bold mt-3">BASKETBALL</h1>
+                 <p class="text-[#8E9991] mt-1">20+ courts</p>
+
+            </div>
+            <div class="box h-[150px] w-[160px] rounded-xl shadow-xl  shadow-gray-400 flex justify-normal items-center flex-col">
+                  <div class="bg-black h-[52px] w-[55px] items-center justify-center flex rounded-xl mt-5">
+                <i class="ri-ping-pong-fill text-[#A5D66A] text-2xl"></i>
+                </div>
+                 <h1 class="font-bold mt-3">TENNIS</h1>
+                 <p class="text-[#8E9991] mt-1">15+ courts</p>
+
+            </div>
+           
+
+
+        </div>
 
     </section>
     <!-- section 2 end -->
