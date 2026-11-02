@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<style>
+    span{
+        color: #A5D66A;
+    }
+    html,body{
+        overflow-x: hidden;
+    }
+     @media  screen and (max-width:768px) {
+        nav{
+        width:100%;
+        ul{
+            display: none;
+            position:absolute;
+            flex-direction: column;
+            height:  200px;
+            top:50px;
+            width: auto;
+            padding: 10px;
+            background-color: black;
+             right: 20px;
+        }
+        .show{
+            display: flex;
+        }
+        .outer{
+            display: none;
+        }
+        .remix{
+            display: block;
+            position: relative;
+        }
+    }
+    }
+</style>
+<body>
+     <nav class=" h-[10vh] flex  justify-around item-center fixed z-9999 w-[100%] bg-black text-white md:h-[15vh] p-4" >
+        <div class="w-[50%] md:w-[15%] flex justify-evenly item-center">
+        <i class="ri-t-box-fill text-6xl text-[#A5D66A]"></i>
+        <div>
+           <h1 class="text-2xl">Ten<span>Fit</span>.ae</h1>
+           <p>Dubai Sports</p>
+        </div>
+        </div>
+        <i class="ri-menu-line remix md:hidden text-5xl "></i>
+        <ul class="hidden ul md:flex justify-evenly item-center w-[65%] p-4">
+            <li class="text-[#a5d66a]"><a href="index.html">Home</a></li>
+            <li class="cursor-pointer hover:text-[#a5d66a]"> 
+                <a href="about.html">About</a></li>
+            
+            <li class="cursor-pointer hover:text-[#a5d66a]"> 
+                <a href="tournaments.html">Tournaments</a></li>
+            <li class="cursor-pointer hover:text-[#a5d66a]"> 
+                <a href="events.html">Events</a></li>
+            <li  class="cursor-pointer hover:text-[#a5d66a]"> 
+                <a href="brands.html">Brands</a></li>
+        </ul>
+
+
+    </nav>
+    <!-- home page -->
+    <section class="min-h-[120vh] ">
+        <div class="bg-[url(./images/tounaments.jpeg)] bg-fixed bg-center relative bg-cover h-[120vh] ">
+            <div class="h-[100%] w-[100%] bg-black/86 text-white text-center pt-36">
+                <div class="w-[75%] mx-auto ">
+                <div class="text-[#A5D66A] bg-[#626563] border border-white h-[8%] w-[55%] mx-auto flex justify-center items-center rounded-xl">● Dubai's Premier Events & Sports Activations Platform</div>
+                <h1 class="text-7xl font-bold my-4">Bespoke Sports Events & Experiential Activations</h1>
+                <p class="my-6 text-[23px]">Turnkey corporate sports days, high-stakes tournaments, office olympics, and immersive brand fan zones across Dubai & the UAE. Built for performance, engagement, and unforgettable memories.</p>
+                <button class="bg-[#A5D66A] text-black ring px-9 py-3 rounded-lg font-bold hover:bg-white">Book An Activation Account</button>
+                <button class="border border-white ring px-9 py-3 rounded-lg font-bold mx-5 hover:bg-[#626563] my-6">Whatsapp Instant Quote(058 234 3456)</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- page end -->
+
+    <!-- section2 start -->
+     <section class="h-[100vh] bg-black ">
+       <div class="flex justify-evenly items-center flex-col md:flex-wrap md:flex-row min-h-[95vh] p-8 gap-5">
+           
+            <div class=" md:w-[32%] border border-white h-[100%] rounded-lg  bg-slate-300">
+            <img src="./images/tounaments.jpeg" alt="" class="h-[30%] w-[100%] rounded-lg">
+            <div class="w-[92%] mx-auto  h-[38%] p-2">
+                <h1 class="text-[18px] md:text-[22px] font-bold">Zen Star Sports Oxford School</h1>
+                <div class="flex justify-normal items-center gap-2 pb-2 my-1 border-b-2 border-gray-600">
+                <i class="ri-map-pin-fill text-[#A5D66A]"></i><p> Muhaisnah 4 · 15.2 km</p>
+                </div>
+                <div class="flex justify-between items-center my-4">
+                    <h1><span class="text-2xl text-[#A5D66A] font-bold">AED 175</span> /hour</h1>
+                    <button class="bg-[#afd66a] text-black ring rounded-sm py-1 px-4">Book</button>
+
+                </div>
+
+           </div>
+           </div>
+         <div class="w-[94%] md:w-[32%] border border-white h-[95%] rounded-lg  bg-slate-300">
+            <img src="./images/cricket.jpg" alt="" class="h-[30%] w-[100%] rounded-lg">
+            <div class="w-[92%] mx-auto  h-[38%] p-2">
+                <h1 class="text-[18px] md:text-[22px] font-bold">Zen Star Sports Oxford School</h1>
+                <div class="flex justify-normal items-center gap-2 pb-2 my-1 border-b-2 border-gray-600">
+                <i class="ri-map-pin-fill text-[#A5D66A]"></i><p> Muhaisnah 4 · 15.2 km</p>
+                </div>
+                <div class="flex justify-between items-center my-4">
+                    <h1><span class="text-2xl text-[#A5D66A] font-bold">AED 175</span> /hour</h1>
+                    <button class="bg-[#afd66a] text-black ring rounded-sm py-1 px-4">Book</button>
+
+                </div>
+
+           </div>
+           </div>
+           
+        </div>
+
+
+
+     </section>
+     <!-- section2 end -->
+
+     <!-- footer -->
+     <footer class="min-h-[60vh] bg-black p-20 flex justify-evenly items-start md:flex-row flex-col gap-11 text-white">
+       <div class="md:w-[35%] h-[95%] w-[90%] md:text-start text-center">
+         <div class="w-[50%] md:w-[15%] flex justify-evenly item-center m-10 md:m-0">
+        <i class="ri-t-box-fill text-6xl text-[#A5D66A]"></i>
+        <div>
+           <h1 class="text-2xl">Ten<span>Fit</span>.ae</h1>
+           <p>Dubai Sports</p>
+        </div>
+        </div>
+        <h1 class="my-8">Dubai's premier sports community & events activation platform. Discover venues, corporate team building, tournaments & brand activations across the UAE.</h1>
+
+       </div>
+       <div class=" w-[90%] md:w-[25%] h-[95%] md:text-start text-center">
+        <h1 class="text-2xl"><span>Events & Sports</span></h1>
+        <ul class="my-4">
+            <li class="my-3">Events & Activations</li>
+            <li class="my-3">Team Building </li>
+            <li class="my-3">Sports Tournaments</li>
+            <li class="my-3">Brand Activations</li>
+            <li class="my-3">Event Registrations</li>
+        </ul>
+       </div>
+       <div class="w-[90%] md:w-[25%] h-[95%] md:text-start text-center">
+         <h1 class="text-2xl"><span>Company</span></h1>
+        <ul class="my-4">
+            <li class="my-3">About ZenFit</li>
+            <li class="my-3">What We Do</li>
+            <li class="my-3">Our Venues</li>
+            <li class="my-3">Communities</li>
+            <li class="my-3">Contact Us</li>
+        </ul>
+       </div>
+       <div class="w-[90%] md:w-[25%] h-[95%] md:text-start text-center">
+        <h1 class="text-2xl"><span>Contact & Support</span></h1>
+        <ul class="my-4">
+            <li class="my-3">About ZenFit</li>
+            <li class="my-3">What We Do</li>
+            <li class="my-3">Our Venues</li>
+            <li class="my-3">Communities</li>
+           
+        </ul>
+       </div>
+
+
+     </footer>
+    
+</body>
+<script>
+  let remix = document.querySelector(".remix")
+   let ul = document.querySelector(".ul")
+
+   remix.addEventListener("click",()=>{
+    ul.classList.toggle("show")
+
+   })
+
+</script>
+</html>

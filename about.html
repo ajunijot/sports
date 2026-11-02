@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<style>
+    span{
+        color: #A5D66A;
+    }
+    html,body{
+        overflow-x: hidden;
+    }
+     @media  screen and (max-width:768px) {
+        nav{
+        width:100%;
+        ul{
+            display: none;
+            position:absolute;
+            flex-direction: column;
+            height:  200px;
+            top:50px;
+            width: auto;
+            padding: 10px;
+            background-color: black;
+             right: 20px;
+        }
+        .show{
+            display: flex;
+        }
+        .outer{
+            display: none;
+        }
+        .remix{
+            display: block;
+            position: relative;
+        }
+    }
+    }
+</style>
+<body>
+    <nav class=" h-[10vh] flex  justify-around item-center fixed z-9999 w-[100%] bg-black text-white md:h-[15vh] p-4" >
+        <div class="w-[50%] md:w-[15%] flex justify-evenly item-center">
+        <i class="ri-t-box-fill text-6xl text-[#A5D66A]"></i>
+        <div>
+           <h1 class="text-2xl">Ten<span>Fit</span>.ae</h1>
+           <p>Dubai Sports</p>
+        </div>
+        </div>
+        <i class="ri-menu-line remix md:hidden text-5xl "></i>
+       <ul class="hidden ul md:flex justify-evenly item-center w-[65%] p-4">
+            <li class="text-[#a5d66a]"><a href="index.html">Home</a></li>
+            <li class="cursor-pointer hover:text-[#a5d66a]"> 
+                <a href="about.html">About</a></li>
+            
+            <li class="cursor-pointer hover:text-[#a5d66a]"> 
+                <a href="tournaments.html">Tournaments</a></li>
+            <li class="cursor-pointer hover:text-[#a5d66a]"> 
+                <a href="events.html">Events</a></li>
+            <li  class="cursor-pointer hover:text-[#a5d66a]"> 
+                <a href="brands.html">Brands</a></li>
+        </ul>
+
+
+    </nav>
+    <section class="h-[120vh]">
+        <div class="bg-[url(./images/bg.jpeg)] bg-fixed bg-center relative bg-cover h-[100%]">
+            <div class="h-[100%] w-[100%] bg-black/80 text-white">
+                 <div class="md:w-[55%] text-center md:text-start absolute top-40  md:left-10 ">
+                    <h2><span>About ZenFit</span></h2>
+                    <h1 class="text-7xl font-bold mt-3">We turn sport into <span>connection, energy, and growth.</span></h1>
+                    <p class="my-7 text-[#D7DDD8] text-2xl">ZenFit.ae brings together Dubai's athletes, communities, and teams through memorable experiences designed to move people, challenge limits, and build lasting friendships.</p>
+                    <button class="bg-[#A5D66A] text-black ring px-9 py-3 rounded-lg font-bold hover:bg-white">Our Story</button>
+                    <button class=" border border-white ring px-9 py-3 rounded-lg font-bold mx-5 hover:bg-[#626563] my-6">Mission & Vission</button>
+                </div>
+                </div>
+        </div>
+    </section>
+     <section class="flex justify-evenly items-center min-h-[100vh] md:flex-row flex-col">
+    <div class="p-3 md:w-[40%] w-[80%] my-6">
+     <h1 class="text-green-700">Our Story</h1>
+     <h2 class="text-6xl font-bold my-4">Sport is where communities become stronger.</h2>
+     <p class="text-[#8E9991] my-3">ZenFit.ae was created to make Dubai’s sports culture more accessible, more exciting, and more human. We connect players, teams, and fitness lovers to the places, events, and energy that help them discover their rhythm.</p>
+      <p class="text-[#8E9991] my-3">From sunrise runs to after-work padel, our focus is simple: build spaces where people move well, connect naturally, and feel part of something bigger than themselves.</p>
+     <div class="flex justify-start items-center h-[70px] w-[100%] gap-4 my-8">
+     <div class="w-[30%] rounded-lg bg-orange-50 h-[100%] flex justify-center items-center flex-col">
+        <h1>Step 01</h1>
+        <p>Share your idea</p>
+     </div>
+     <div class="w-[30%] rounded-lg bg-orange-50 h-[100%] flex justify-center items-center flex-col ">
+        <h1 >Step 02</h1>
+        <p>We Plan It</p>
+     </div>
+     <div class="w-[30%] rounded-lg bg-orange-50 h-[100%] flex justify-center items-center flex-col">
+        <h1>Step 01</h1>
+        <p>We Share It</p>
+     </div>
+     </div>
+     </div>
+     <div class="p-8 w-[90%] md:w-[40%] relative">
+      <img src="./images/about.jpeg" alt="" class="size-[500px] rounded-lg relative">
+      <div class=" absolute w-[40%] mx-2 md:w-[30%] h-[28%] bottom-12 bg-black text-white md:mx-12 rounded-lg right-3 flex justify-evenly items-center flex-col text-center">
+        <h1 class="text-[20px]"><span>Wellness First</span></h1>
+        <h2>Designed around movement, recovery, teamwork, and confidence.</h2>
+    
+    </div>
+     </section>
+
+      <!-- footer -->
+     <footer class="min-h-[60vh] bg-black p-20 flex justify-evenly items-start md:flex-row flex-col gap-11 text-white">
+       <div class="md:w-[35%] h-[95%] w-[90%] text-center md:text-start">
+         <div class="w-[50%] md:w-[15%] flex justify-evenly item-center m-10 md:m-0">
+        <i class="ri-t-box-fill text-6xl text-[#A5D66A]"></i>
+        <div>
+           <h1 class="text-2xl">Ten<span>Fit</span>.ae</h1>
+           <p>Dubai Sports</p>
+        </div>
+        </div>
+        <h1 class="my-8">Dubai's premier sports community & events activation platform. Discover venues, corporate team building, tournaments & brand activations across the UAE.</h1>
+
+       </div>
+       <div class=" w-[90%] md:w-[25%] h-[95%] text-center md:text-start">
+        <h1 class="text-2xl"><span>Events & Sports</span></h1>
+        <ul class="my-4">
+            <li class="my-3">Events & Activations</li>
+            <li class="my-3">Team Building </li>
+            <li class="my-3">Sports Tournaments</li>
+            <li class="my-3">Brand Activations</li>
+            <li class="my-3">Event Registrations</li>
+        </ul>
+       </div>
+       <div class="w-[90%] md:w-[25%] h-[95%] text-center md:text-start">
+         <h1 class="text-2xl"><span>Company</span></h1>
+        <ul class="my-4">
+            <li class="my-3">About ZenFit</li>
+            <li class="my-3">What We Do</li>
+            <li class="my-3">Our Venues</li>
+            <li class="my-3">Communities</li>
+            <li class="my-3">Contact Us</li>
+        </ul>
+       </div>
+       <div class="w-[90%] md:w-[25%] h-[95%] text-center md:text-start">
+        <h1 class="text-2xl"><span>Contact & Support</span></h1>
+        <ul class="my-4">
+            <li class="my-3">About ZenFit</li>
+            <li class="my-3">What We Do</li>
+            <li class="my-3">Our Venues</li>
+            <li class="my-3">Communities</li>
+           
+        </ul>
+       </div>
+
+
+     </footer>
+    
+</body>
+<script>
+  let remix = document.querySelector(".remix")
+   let ul = document.querySelector(".ul")
+
+   remix.addEventListener("click",()=>{
+    ul.classList.toggle("show")
+
+   })
+
+</script>
+</html>
